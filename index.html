@@ -18,269 +18,423 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- navbar  -->
-    <nav>
-      <div class="container">
-        <a href="" class="logo"
-          ><img
-            src="./assets/Modul_B_Asset/Modul_B_Material/img/logo-header.png"
-            alt=""
-        /></a>
-        <button id="nav-toggle" class="btn btn-toggle">
-          <i class="flaticon-menu48 menu-icon"></i>
-        </button>
-        <ul class="nav-group collapse">
-          <i id="close-nav" class="close-nav">X</i>
-          <li class="nav-item"><a class="menu" href="#main">Home</a></li>
-          <li class="nav-item"><a class="menu" href="#about">About Us</a></li>
-          <li class="nav-item"><a class="menu" href="#why-choose">Why Choose Us</a></li>
-          <li class="nav-item"><a class="menu" href="#featured-product">Products</a></li>
-          <li class="nav-item"><a class="menu" href="">Testimonial</a></li>
-          <li class="nav-item"><a class="menu" href="">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- end navbar  -->
-
-    <!-- carousel  -->
-    <section id="main">
-      <div id="my-carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li
-            class="active"
-            data-target="#my-carousel"
-            data-slide-to="0"
-            aria-current="location"
-          ></li>
-          <li data-target="#my-carousel" data-slide-to="1"></li>
-          <li data-target="#my-carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100 carousel-image"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/1.jpg"
+    <div id=wrap>
+      <!-- navbar  -->
+      <nav>
+        <div class="container">
+          <a href="" class="logo"
+            ><img
+              src="./assets/Modul_B_Asset/Modul_B_Material/img/logo-header.png"
               alt=""
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>GEKK-BOT</h1>
-              <p>Where innovations create the best future</p>
-              <div class="row justify-content-center">
-                <button class="btn btn-outline-light mr-3">Our Product</button>
-                <button class="btn btn-primary">About Us</button>
+          /></a>
+          <button id="nav-toggle" class="btn btn-toggle">
+            <i class="flaticon-menu48 menu-icon"></i>
+          </button>
+          <ul class="nav-group collapse">
+            <i id="close-nav" class="close-nav">X</i>
+            <li class="nav-item"><a class="menu" href="#main">Home</a></li>
+            <li class="nav-item"><a class="menu" href="#about">About Us</a></li>
+            <li class="nav-item">
+              <a class="menu" href="#why-choose">Why Choose Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu" href="#product">Products</a>
+            </li>
+            <li class="nav-item"><a class="menu" href="#testimonial">Testimonial</a></li>
+            <li class="nav-item"><a class="menu" href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end navbar  -->
+
+      <!-- carousel  -->
+      <section id="main">
+        <div id="my-carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li
+              class="active"
+              data-target="#my-carousel"
+              data-slide-to="0"
+              aria-current="location"
+            ></li>
+            <li data-target="#my-carousel" data-slide-to="1"></li>
+            <li data-target="#my-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 carousel-image"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/1.jpg"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>GEKK-BOT</h1>
+                <p>Where innovations create the best future</p>
+                <div class="row justify-content-center">
+                  <button class="btn btn-outline-light mr-3">
+                    Our Product
+                  </button>
+                  <button class="btn btn-primary">About Us</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 carousel-image"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/2.jpg"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>GEKK-BOT</h1>
+                <p>Where innovations create the best future</p>
+                <div class="row justify-content-center">
+                  <button class="btn btn-outline-light mr-3">
+                    Our Product
+                  </button>
+                  <button class="btn btn-primary">About Us</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 carousel-image"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/3.jpg"
+                alt=""
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>GEKK-BOT</h1>
+                <p>Where innovations create the best future</p>
+                <div class="row justify-content-center">
+                  <button class="btn btn-outline-light mr-3">
+                    Our Product
+                  </button>
+                  <button class="btn btn-primary">About Us</button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 carousel-image"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/2.jpg"
-              alt=""
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>GEKK-BOT</h1>
-              <p>Where innovations create the best future</p>
-              <div class="row justify-content-center">
-                <button class="btn btn-outline-light mr-3">Our Product</button>
-                <button class="btn btn-primary">About Us</button>
+          <a
+            class="carousel-control-prev"
+            href="#my-carousel"
+            data-slide="prev"
+            role="button"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#my-carousel"
+            data-slide="next"
+            role="button"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- end carusel  -->
+
+      <!-- about  -->
+      <section id="about">
+        <div class="container">
+          <h3 class="title">US</h3>
+          <div class="row baris-1">
+            <div class="col-lg-6 about-text">
+              <span>GEEK-BOT</span> WHERE INNOVATIONS CREATE THE BEST FUTURE
+            </div>
+            <div class="col-lg-6">
+              <img
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/robot.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-12">
+              <p>GEEK-BOT is a company that focus in robot development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row baris-3">
+          <div class="col-lg-6 bf-left">
+            <h3>Where Creativity</h3>
+          </div>
+          <div class="col-lg-6 bf-right">
+            <h3>Meets Future Technologhy</h3>
+          </div>
+        </div>
+      </section>
+      <!-- end about  -->
+
+      <!-- why choose  -->
+      <section id="why-choose" class="mt-5 why-choose">
+        <div class="container">
+          <div class="col-12 title">
+            <h3>Choose <span>Us</span></h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column text-center">
+              <div class="col-12">
+                <img
+                  src="./assets/Modul_B_Asset/Modul_B_Material/img/1.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-12"><h3>Flexible Design</h3></div>
+              <div class="col-12">
+                <p>
+                  Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                  fugiat.Quis mollit eiusmod nulla sunt cillum.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column text-center">
+              <div class="col-12">
+                <img
+                  src="./assets/Modul_B_Asset/Modul_B_Material/img/2.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-12"><h3>Very Efficient</h3></div>
+              <div class="col-12">
+                <p>
+                  Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                  fugiat.Quis mollit eiusmod nulla sunt cillum.
+                </p>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100 carousel-image"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/slider/3.jpg"
-              alt=""
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>GEKK-BOT</h1>
-              <p>Where innovations create the best future</p>
-              <div class="row justify-content-center">
-                <button class="btn btn-outline-light mr-3">Our Product</button>
-                <button class="btn btn-primary">About Us</button>
+          <div class="row">
+            <div class="col-lg-6 d-flex flex-column text-center">
+              <div class="col-12">
+                <img
+                  src="./assets/Modul_B_Asset/Modul_B_Material/img/3.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-12"><h3>Attractive Model</h3></div>
+              <div class="col-12">
+                <p>
+                  Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                  fugiat.Quis mollit eiusmod nulla sunt cillum.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column text-center">
+              <div class="col-12">
+                <img
+                  src="./assets/Modul_B_Asset/Modul_B_Material/img/4.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-12"><h3>Easy Programming</h3></div>
+              <div class="col-12">
+                <p>
+                  Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                  fugiat.Quis mollit eiusmod nulla sunt cillum.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#my-carousel"
-          data-slide="prev"
-          role="button"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#my-carousel"
-          data-slide="next"
-          role="button"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </section>
+      </section>
+      <!-- end why choose  -->
 
-    <!-- end carusel  -->
+      <!-- featured product  -->
+      <section id="featured-product">
+        <div class="container">
+          <h3 class="title">Products</h3>
+          <div class="row justify-content-center">
+            <div class="col-lg product">
+              <img
+                class="img-fluid img-product"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/1.png"
+                alt=""
+              />
+              <div class="overlay">
+                <button class="btn btn-learn-more">Learn More</button>
+              </div>
+            </div>
+            <div class="col-lg product">
+              <img
+                class="img-fluid img-product"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/2.png"
+                alt=""
+              />
+              <div class="overlay">
+                <button class="btn btn-learn-more">Learn More</button>
+              </div>
+            </div>
+            <div class="col-lg product">
+              <img
+                class="img-fluid img-product"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/3.png"
+                alt=""
+              />
+              <div class="overlay">
+                <button class="btn btn-learn-more">Learn More</button>
+              </div>
+            </div>
+            <div class="col-lg product">
+              <img
+                class="img-fluid img-product"
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/4.png"
+                alt=""
+              />
+              <div class="overlay">
+                <button class="btn btn-learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end featured product  -->
 
-    <!-- about  -->
-    <section id="about">
-      <div class="container">
-        <h3 class="title">US</h3>
-        <div class="row baris-1">
-          <div class="col-lg-6 about-text">
-            <span>GEEK-BOT</span> WHERE INNOVATIONS CREATE THE BEST FUTURE
+      <!-- product  -->
+      <section id="product">
+        <div class="container">
+          <div class="title text-center">
+            <h3>Our <span>Products</span></h3>
           </div>
-          <div class="col-lg-6">
-            <img
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/robot.png"
-              class="img-fluid"
-              alt=""
-            />
+          <div class="row">
+            <div class="col text-center">
+              <p class="subtitle">Check out some of our latest and greatest product.</p>
+            </div>
           </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-lg-12">
-            <p>GEEK-BOT is a company that focus in robot development.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row baris-3">
-        <div class="col-lg-6 bf-left">
-          <h3>Where Creativity</h3>
-        </div>
-        <div class="col-lg-6 bf-right">
-          <h3>Meets Future Technologhy</h3>
-        </div>
-      </div>
-    </section>
-    <!-- end about  -->
-
-    <!-- why choose  -->
-    <section id="why-choose" class="mt-5 why-choose">
-      <div class="container">
-        <div class="col-12 title">
-          <h3>Choose <span>Us</span></h3>
+          <div class="row mt-3">
+            <div class="col text-center">
+              <ul class="list-inline">
+                <li class="list-inline-item active">:::</li>
+                <li class="list-inline-item"><a href="">Humanoid</a></li>
+                <li class="list-inline-item"><a href="">LEGO</a></li>
+                <li class="list-inline-item"><a href="">Industrial</a></li>
+                <li class="list-inline-item"><a href="">Transportation</a></li>
+              </ul>
+            </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 d-flex flex-column text-center">
-            <div class="col-12">
-              <img
-                src="./assets/Modul_B_Asset/Modul_B_Material/img/1.png"
-                alt=""
-              />
-            </div>
-            <div class="col-12"><h3>Flexible Design</h3></div>
-            <div class="col-12">
-              <p>
-                Eiusmod esse ullamco esse adipisicing deserunt pariatur
-                fugiat.Quis mollit eiusmod nulla sunt cillum.
-              </p>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/1.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
             </div>
           </div>
-          <div class="col-lg-6 d-flex flex-column text-center">
-            <div class="col-12">
-              <img
-                src="./assets/Modul_B_Asset/Modul_B_Material/img/2.png"
-                alt=""
-              />
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/2.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
             </div>
-            <div class="col-12"><h3>Very Efficient</h3></div>
-            <div class="col-12">
-              <p>
-                Eiusmod esse ullamco esse adipisicing deserunt pariatur
-                fugiat.Quis mollit eiusmod nulla sunt cillum.
-              </p>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/3.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/4.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/5.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/6.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/7.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/8.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/9.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/10.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/11.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
+            </div>
+          </div>
+          <div class="col-lg-3 our-produk mb-3">
+            <img class="img-fluid img-product" src="./assets/Modul_B_Asset/Modul_B_Material/img/products/12.png" alt="">
+            <div class="overlay text-center">
+              <h3>Our Product</h3>
+              <button class="btn-view-product">View Product</button>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6 d-flex flex-column text-center">
-            <div class="col-12">
-              <img
-                src="./assets/Modul_B_Asset/Modul_B_Material/img/3.png"
-                alt=""
-              />
-            </div>
-            <div class="col-12"><h3>Attractive Model</h3></div>
-            <div class="col-12">
-              <p>
-                Eiusmod esse ullamco esse adipisicing deserunt pariatur
-                fugiat.Quis mollit eiusmod nulla sunt cillum.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex flex-column text-center">
-            <div class="col-12">
-              <img
-                src="./assets/Modul_B_Asset/Modul_B_Material/img/4.png"
-                alt=""
-              />
-            </div>
-            <div class="col-12"><h3>Easy Programming</h3></div>
-            <div class="col-12">
-              <p>
-                Eiusmod esse ullamco esse adipisicing deserunt pariatur
-                fugiat.Quis mollit eiusmod nulla sunt cillum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end why choose  -->
+      </section>
+      <!-- end product  -->
 
-    <!-- featured product  -->
-    <section id="featured-product">
-      <div class="container">
-        <h3 class="title">Products</h3>
-        <div class="row">
-          <div class="col-lg product">
-            <img
-              class="img-fluid img-product"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/1.png"
-              alt=""
-            />
-            <div class="overlay">
-              <button class="btn btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="col-lg product">
-            <img
-              class="img-fluid img-product"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/1.png"
-              alt=""
-            />
-            <div class="overlay">
-              <button class="btn btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="col-lg product">
-            <img
-              class="img-fluid img-product"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/1.png"
-              alt=""
-            />
-            <div class="overlay">
-              <button class="btn btn-learn-more">Learn More</button>
-            </div>
-          </div>
-          <div class="col-lg product">
-            <img
-              class="img-fluid img-product"
-              src="./assets/Modul_B_Asset/Modul_B_Material/img/featured/1.png"
-              alt=""
-            />
-            <div class="overlay">
-              <button class="btn btn-learn-more">Learn More</button>
+      <!-- Testimonial  -->
+      <section id="testimonial">
+        <div class="container text-center">
+          <h3>What Our Customer Said</h3>
+          <div class="row">
+            <div class="col-8 card">
+              <h4>GEKK-BOT is AWESOME!!!</h4>
+              <div class="row justify-content-center">
+              <img class="img-fluid mr-3" src="./assets/Modul_B_Asset/Modul_B_Material/img/testimonial/face-1.jpg" alt="">
+              
+                  <p class="text-primary mt-3">Anonymous</p>
+                
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- end featured product  -->
+      </section>
+      <!-- End Testimonial  -->
+
+      <!-- Contact Us  -->
+      <section id="contact-us">
+        <div class="contaier-fluid maps d-flex flex-column justify-content-end">
+          <div class="row ">
+            <div class="col-12 text-map text-center">
+              <h3 class="">Have any <span>question</span> ? Send a <span>Message</span>!</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Us  -->
+    </div>
 
     <script src="./assets/bootstrap/assets/js/vendor/jquery-slim.min.js"></script>
     <script src="./assets/bootstrap/assets/js/vendor/popper.min.js"></script>
