@@ -355,6 +355,7 @@ nav .nav-group .nav-item:last-child::after {
 
 #testimonial{
     background-color: rgb(65, 64, 64);
+    height: 400px;
 }
 
 #testimonial .container{
@@ -396,6 +397,14 @@ nav .nav-group .nav-item:last-child::after {
 
 #contact-us .text-map h3 span{
     font-family: "Campton-Bold";
+}
+
+.footer{
+    padding: 50px 0;
+}
+
+.footer .text-copyright{
+    color: #9c9b9b;
 }
 
 /* tablet */
