@@ -10,41 +10,33 @@
       href="./assets/bootstrap/dist/css/bootstrap.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="./assets/Modul_B_Asset/Modul_B_Material/fonts/flaticons/flaticon.css"
+    />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- navbar  -->
+    <nav>
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/Modul_B_Asset/Modul_B_Material/img/logo-header.png"
-          />
-        </a>
-        <button
-          class="navbar-toggler d-lg-none"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapsibleNavId"
-          aria-controls="collapsibleNavId"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <div class="nav navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-            <a class="nav-item nav-link" href="#">About Us</a>
-            <a class="nav-item nav-link" href="#">Why Choose Us</a>
-            <a class="nav-item nav-link" href="#">Products</a>
-            <a class="nav-item nav-link" href="#">Testimonial</a>
-            <a class="nav-item nav-link" href="#">Contact Us</a>
-          </div>
-        </div>
+        <a href="" class="logo"><img src="./assets/Modul_B_Asset/Modul_B_Material/img/logo-header.png" alt=""></a>
+        <button id="nav-toggle" class="btn btn-toggle"><i class="flaticon-menu48 menu-icon"></i></button>
+        <ul class="nav-group collapse">
+          <i id="close-nav" class="close-nav">X</i>
+          <li class="nav-item"><a href=""></a>Home</li>
+          <li class="nav-item"><a href=""></a>About Us</li>
+          <li class="nav-item"><a href=""></a>Why Choose Us</li>
+          <li class="nav-item"><a href=""></a>Products</li>
+          <li class="nav-item"><a href=""></a>Testimonial</li>
+          <li class="nav-item"><a href=""></a>Contact Us</li>
+        </ul>
       </div>
     </nav>
+    <!-- end navbar  -->
+
+    <!-- carousel  -->
     <div id="my-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li
@@ -122,8 +114,9 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- end carusel  -->
 
-		<!-- about  -->
+    <!-- about  -->
     <section id="about">
       <div class="container">
         <h3 class="title">US</h3>
@@ -147,51 +140,93 @@
       </div>
       <div class="row baris-3">
         <div class="col-lg-6 bf-left">
-          <h1>asdsadasd</h1>
+          <h3>Where Creativity</h3>
         </div>
         <div class="col-lg-6 bf-right">
-          <h1>ghghg</h1>
+          <h3>Meets Future Technologhy</h3>
         </div>
       </div>
-		</section>
-		<!-- end about  -->
+    </section>
+    <!-- end about  -->
 
-		<!-- why choose  -->
-		<section class="mt-5 why-choose">
-			<div class="container">
-				<div class="col-12 title">
-					<h3> Choose <span>Us</span></h3>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 d-flex flex-column text-center">
-						<div class="col-12"><img src="./assets/Modul_B_Asset/Modul_B_Material/img/1.png" alt=""></div>
-						<div class="col-12"><h3>Flexible Design</h3></div>
-						<div class="col-12"><p>Eiusmod esse ullamco esse adipisicing deserunt pariatur fugiat.Quis mollit eiusmod nulla sunt cillum.</p></div>
-					</div>
-					<div class="col-lg-6 d-flex flex-column text-center">
-						<div class="col-12"><img src="./assets/Modul_B_Asset/Modul_B_Material/img/2.png" alt=""></div>
-						<div class="col-12"><h3>Very Efficient</h3></div>
-						<div class="col-12"><p>Eiusmod esse ullamco esse adipisicing deserunt pariatur fugiat.Quis mollit eiusmod nulla sunt cillum.</p></div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-6 d-flex flex-column text-center">
-						<div class="col-12"><img src="./assets/Modul_B_Asset/Modul_B_Material/img/3.png" alt=""></div>
-						<div class="col-12"><h3>Attractive Model</h3></div>
-						<div class="col-12"><p>Eiusmod esse ullamco esse adipisicing deserunt pariatur fugiat.Quis mollit eiusmod nulla sunt cillum.</p></div>
-					</div>
-					<div class="col-lg-6 d-flex flex-column text-center">
-						<div class="col-12"><img src="./assets/Modul_B_Asset/Modul_B_Material/img/4.png" alt=""></div>
-						<div class="col-12"><h3>Easy Programming</h3></div>
-						<div class="col-12"><p>Eiusmod esse ullamco esse adipisicing deserunt pariatur fugiat.Quis mollit eiusmod nulla sunt cillum.</p></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- end why choose  -->
+    <!-- why choose  -->
+    <section class="mt-5 why-choose">
+      <div class="container">
+        <div class="col-12 title">
+          <h3>Choose <span>Us</span></h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column text-center">
+            <div class="col-12">
+              <img
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/1.png"
+                alt=""
+              />
+            </div>
+            <div class="col-12"><h3>Flexible Design</h3></div>
+            <div class="col-12">
+              <p>
+                Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                fugiat.Quis mollit eiusmod nulla sunt cillum.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column text-center">
+            <div class="col-12">
+              <img
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/2.png"
+                alt=""
+              />
+            </div>
+            <div class="col-12"><h3>Very Efficient</h3></div>
+            <div class="col-12">
+              <p>
+                Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                fugiat.Quis mollit eiusmod nulla sunt cillum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column text-center">
+            <div class="col-12">
+              <img
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/3.png"
+                alt=""
+              />
+            </div>
+            <div class="col-12"><h3>Attractive Model</h3></div>
+            <div class="col-12">
+              <p>
+                Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                fugiat.Quis mollit eiusmod nulla sunt cillum.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column text-center">
+            <div class="col-12">
+              <img
+                src="./assets/Modul_B_Asset/Modul_B_Material/img/4.png"
+                alt=""
+              />
+            </div>
+            <div class="col-12"><h3>Easy Programming</h3></div>
+            <div class="col-12">
+              <p>
+                Eiusmod esse ullamco esse adipisicing deserunt pariatur
+                fugiat.Quis mollit eiusmod nulla sunt cillum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end why choose  -->
 
     <script src="./assets/bootstrap/assets/js/vendor/jquery-slim.min.js"></script>
     <script src="./assets/bootstrap/assets/js/vendor/popper.min.js"></script>
     <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="./index.js"></script>
   </body>
 </html>
