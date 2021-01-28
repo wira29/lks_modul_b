@@ -14,6 +14,19 @@ html{
     scroll-behavior: smooth;
 }
 
+/* wrapper  */
+.wrap-active::after{
+   content: "asdsdasdasdasd";
+   display: block;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   bottom: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 3;
+}
+
 /* navbar */
 nav {
     padding: 30px 0;
@@ -271,10 +284,50 @@ nav .nav-group .nav-item:last-child::after {
     color: snow;
 }
 
+#featured-product .overlay > h3{
+    color: snow;
+    font-family: "Campton-Bold";
+    margin-top: 100px;
+}
+
 #featured-product .product:hover .overlay{
     background-color: deepskyblue;
     opacity: 0.7;
     z-index: 2;
+}
+
+.modal-featured-product .card{
+    width: 70% !important;
+    background-color: white;
+    height: 90%;
+    margin: auto;
+    z-index: 4;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.modal-featured-product .card .btn{
+    float: right;
+}
+
+.modal-featured-product .card h3{
+    font-family: "Campton-Bold";
+    margin-top: 50px;
+}
+
+.modal-featured-product .card p{
+    font-family: "Campton-Light";
+    color: #494949;
+}
+
+.wrap-active .modal-featured-product .card{
+    opacity: 1;
+    display: block;
 }
 
 /* produk  */

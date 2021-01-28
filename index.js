@@ -12,4 +12,14 @@ $(document).ready(function(){
     $('.menu').on('click', function(){
         $('.nav-group').addClass('collapse');
     })
+
+    // featured product 
+    $('.btn-learn-more').on('click', function(){
+        $('#wrap').addClass('wrap-active');
+        // alert('aa');
+    })
+
+    $('.close-modal-featured').on('click', function() {
+        $('#wrap').removeClass('wrap-active');
+    })
 })
