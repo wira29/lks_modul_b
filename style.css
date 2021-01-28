@@ -9,27 +9,92 @@
     src: url('./assets/Modul_B_Asset/Modul_B_Material/fonts/campton/Campton-LightDEMO.otf');
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* navbar */
-nav .nav-item {
+nav {
+    padding: 30px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; 
+    z-index: 3;
+}
+
+nav .btn-toggle{
+    float: right;
+    background-color: transparent;
+}
+
+nav .btn-toggle .menu-icon{
+    color: white;
+}
+
+nav .nav-group .close-nav{
+    color: snow;
+    font-family: "Campton-Bold";
+    font-size: 20px;
+    margin: 10px 100px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+nav .nav-group {
+    height: 100%;
+    display: block;
+    background-color: rgb(48, 150, 184);
+    opacity: 0.9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+nav .nav-group .nav-item:nth-child(2){
+    margin-top: 70px;
+}
+
+nav .nav-group .nav-item {
+    margin-top: 30px;
+    text-align: center;
+    list-style: none;
+    font-size: 24px;
+    color: snow;
     text-transform: uppercase;
 }
 
-nav {
-    position: relative;
-    z-index: 2;
+nav .nav-group .nav-item::after {
+   content: "";
+   display: block;
+   border-bottom: 2px solid skyblue;
+   width: 30%;
+   margin: auto;
 }
+
+nav .nav-group .nav-item:last-child::after {
+    content: "";
+    border: none;
+ }
+
+ nav .collapse{
+     display: none;
+ }
 
 
 /* carousel */
 .carousel .carousel-image{
-    /* margin-top: -200px; */
+    /* margin-top: -100px; */
     height: 400px;
     position: relative;
 }
 .carousel {
-    margin-top: -75px;
+    /* margin-top: -75px; */
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 .carousel-item::after{
     content: "";
@@ -37,7 +102,7 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     bottom: 0;
 }
 
@@ -53,6 +118,7 @@ nav {
 #about .container .title{
     font-family: "Campton-Light";
     color: deepskyblue;
+    margin-bottom: 50px;
 }
 
 #about .container .title::before{
@@ -79,24 +145,38 @@ nav {
     width: 400px;
 }
 
-#about .baris-3 img{
-    width: 900px;
-}
 
 #about .baris-3 .bf-left{
     padding-right : 0;
     background-image: url('./assets/Modul_B_Asset/Modul_B_Material/img/case-study/bf-left.jpg');
     background-size: 700px;
-    height: 200px;
+    background-position: top right;
+    height: 300px;
     background-repeat: no-repeat;
+    font-family: "Campton-Light";
+}
+
+#about .baris-3 .bf-left h3{
+    color: beige;
+    text-shadow: 1px 1px 1px #757575;
+    text-align: right;
+    margin: 100px 40px;
 }
 
 #about .baris-3 .bf-right{
     padding-left : 0;
     background-image: url('./assets/Modul_B_Asset/Modul_B_Material/img/case-study/bf-right.jpg');
     background-size: 700px;
-    height: 200px;
+    height: 300px;
     background-repeat: no-repeat;
+    font-family: "Campton-Light";
+}
+
+#about .baris-3 .bf-right h3{
+    color: beige;
+    text-shadow: 1px 1px 1px #757575;
+    text-align: left;
+    margin: 100px 40px;
 }
 
 
@@ -148,7 +228,7 @@ nav {
 }
 
 /* desktop */
-@media (min-width: 1025px){
+@media (min-width: 992px){
 
     /* carousel */
     .carousel .carousel-image{
