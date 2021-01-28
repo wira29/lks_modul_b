@@ -9,8 +9,9 @@
     src: url('./assets/Modul_B_Asset/Modul_B_Material/fonts/campton/Campton-LightDEMO.otf');
 }
 
-body{
+html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* navbar */
@@ -62,6 +63,11 @@ nav .nav-group .nav-item {
     margin-top: 30px;
     text-align: center;
     list-style: none;
+    
+}
+
+nav .nav-group .nav-item a{
+    text-decoration: none;
     font-size: 24px;
     color: snow;
     text-transform: uppercase;
@@ -181,8 +187,14 @@ nav .nav-group .nav-item:last-child::after {
 
 
 /* why choose */
+.why-choose{
+    padding: 50px 0;
+}
+
 .why-choose .title h3{
-    font-family: "Campton-Bold";
+    font-family: "Campton-Light";
+    margin-bottom: 100px;
+    /* font-weight: 200; */
 }
 
 .why-choose .title h3::before{
@@ -210,6 +222,60 @@ nav .nav-group .nav-item:last-child::after {
     font-weight: 200;
     color: #adadad;
     font-family: "Campton-Light";
+}
+
+/* featured product  */
+#featured-product {
+    background-color: #dadada;
+    padding: 50px 0;
+    margin-bottom: 300px;
+}
+
+#featured-product .title {
+    color: deepskyblue;
+    font-family: "Campton-Light";
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+#featured-product .title::before {
+    content: "Featured ";
+    color: black;
+    font-family: "Campton-Bold";
+    font-weight: bold;
+    border-bottom: 3px solid deepskyblue;
+}
+
+#featured-product .img-product{
+    border: 3px solid deepskyblue;
+    position: relative;
+    z-index: 1;
+}
+
+#featured-product .overlay{
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 0;
+}
+
+#featured-product .overlay .btn-learn-more{
+    bottom: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    background-color: dodgerblue;
+    font-family: "Campton-Bold";
+    color: snow;
+}
+
+#featured-product .product:hover .overlay{
+    background-color: deepskyblue;
+    opacity: 0.7;
+    z-index: 2;
 }
 
 /* tablet */

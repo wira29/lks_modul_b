@@ -8,4 +8,8 @@ $(document).ready(function(){
     $('#close-nav').on('click', function(){
         $('.nav-group').addClass('collapse');
     })
+    
+    $('.menu').on('click', function(){
+        $('.nav-group').addClass('collapse');
+    })
 })
