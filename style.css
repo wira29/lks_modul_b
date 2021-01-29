@@ -16,7 +16,7 @@ html{
 
 /* wrapper  */
 .wrap-active::after{
-   content: "asdsdasdasdasd";
+   content: "";
    display: block;
    position: fixed;
    width: 100%;
@@ -150,13 +150,13 @@ nav .nav-group .nav-item:last-child::after {
 #about .container .about-text{
     /* font-weight: 10; */
     font-weight: 100;
-    font-size: 40px;
+    font-size: 20px;
     font-family: "Campton-Light";
 }
 
 #about .container .about-text span{
     font-weight: 900;
-    font-size: 40px;
+    font-size: 20px;
     font-family: "Campton-Bold";
 }
 
@@ -325,7 +325,7 @@ nav .nav-group .nav-item:last-child::after {
     color: #494949;
 }
 
-.wrap-active .modal-featured-product .card{
+.wrap-active .modal-featured-product .card-featured{
     opacity: 1;
     display: block;
 }
@@ -406,6 +406,43 @@ nav .nav-group .nav-item:last-child::after {
     color: snow;
 }
 
+.galery{
+    display: none;
+}
+
+.galery .carousel-item{
+    height: 100%;
+    background-color: transparent;
+}
+
+.galery .carousel-item.active::after {
+    content: "";
+    display: none;
+}
+
+.galery .carousel-item img{
+    margin-left: 35%;
+}
+
+.galery button{
+    float: right;
+    margin: 0 50px;
+    position: relative;
+    z-index: 6;
+}
+
+.galery-active {
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+}
+
+
+/* testimonial */
 #testimonial{
     background-color: rgb(65, 64, 64);
     height: 400px;
@@ -488,6 +525,34 @@ nav .nav-group .nav-item:last-child::after {
     .carousel-item h1 {
         margin-top: -350px;
         font-weight: bold;
+    }
+
+
+    /* about  */
+    #about .container .title{
+        font-family: "Campton-Light";
+        color: deepskyblue;
+        margin-bottom: 50px;
+    }
+    
+    #about .container .title::before{
+        content: "About ";
+        font-family: "Campton-Bold";
+        color: black;
+        border-bottom: 3px solid deepskyblue;
+    }
+    
+    #about .container .about-text{
+        /* font-weight: 10; */
+        font-weight: 100;
+        font-size: 40px;
+        font-family: "Campton-Light";
+    }
+    
+    #about .container .about-text span{
+        font-weight: 900;
+        font-size: 40px;
+        font-family: "Campton-Bold";
     }
 
 }
